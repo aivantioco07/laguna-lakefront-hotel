@@ -1,62 +1,133 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Laguna Lakefront Hotel</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="font-sans antialiased">
-  <header class="sticky top-0 z-50 backdrop-blur bg-white border-b">
+<body class="font-sans antialiased text-gray-800">
+  <!-- Header -->
+  <header class="sticky top-0 bg-white shadow z-50">
     <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="font-bold text-xl">Laguna Lakefront Hotel</h1>
+      <h1 class="text-xl font-bold">Laguna Lakefront Hotel</h1>
       <nav class="space-x-4">
-        <a href="#rooms">Rooms</a>
-        <a href="#dining">Dining</a>
-        <a href="#amenities">Amenities</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#offers">Offers</a>
-        <a href="#contact">Contact</a>
+        <a href="#book" class="hover:text-blue-600">Book Now</a>
+        <a href="#rooms" class="hover:text-blue-600">Rooms</a>
+        <a href="#dining" class="hover:text-blue-600">Dining</a>
+        <a href="#amenities" class="hover:text-blue-600">Amenities</a>
+        <a href="#gallery" class="hover:text-blue-600">Gallery</a>
+        <a href="#offers" class="hover:text-blue-600">Offers</a>
+        <a href="#reviews" class="hover:text-blue-600">Reviews</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section id="home" class="h-[70vh] bg-cover bg-center flex items-center justify-center text-center" style="background-image:url('https://images.unsplash.com/photo-1501117716987-c8e2a3a67ca5?q=80&w=1600')">
-    <div class="bg-black bg-opacity-40 p-6 rounded-lg text-white">
-      <h2 class="text-4xl font-extrabold mb-4">Lakeside luxury, warm Filipino hospitality</h2>
+  <!-- Hero -->
+  <section id="home" class="h-[70vh] bg-cover bg-center flex items-center justify-center text-center text-white"
+    style="background-image:url('https://images.unsplash.com/photo-1501117716987-c8e2a3a67ca5?q=80&w=1600')">
+    <div class="bg-black bg-opacity-40 p-6 rounded-lg">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Lakeside luxury, warm Filipino hospitality</h2>
       <p class="mb-6">Unwind by Laguna de Bay with modern rooms, infinity pool, and bistro.</p>
       <a href="#book" class="bg-white text-black px-4 py-2 rounded-lg font-bold">Book Now</a>
     </div>
   </section>
 
+  <!-- Book -->
+  <section id="book" class="max-w-4xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">Book Your Stay</h2>
+    <form class="grid md:grid-cols-4 gap-4">
+      <input type="date" class="border p-2 rounded" placeholder="Check-in">
+      <input type="date" class="border p-2 rounded" placeholder="Check-out">
+      <input type="number" min="1" class="border p-2 rounded" placeholder="Guests">
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Search</button>
+    </form>
+  </section>
+
+  <!-- Rooms -->
   <section id="rooms" class="max-w-7xl mx-auto p-6">
     <h2 class="text-2xl font-bold mb-4">Rooms & Suites</h2>
     <div class="grid md:grid-cols-3 gap-6">
       <div class="border rounded-lg overflow-hidden">
         <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1200" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold">Deluxe King</h3>
-          <p>₱4,200++ / night</p>
-        </div>
+        <div class="p-4"><h3 class="font-semibold">Deluxe King</h3><p>₱4,200++ / night</p></div>
       </div>
       <div class="border rounded-lg overflow-hidden">
         <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold">Premier Twin</h3>
-          <p>₱4,600++ / night</p>
-        </div>
+        <div class="p-4"><h3 class="font-semibold">Premier Twin</h3><p>₱4,600++ / night</p></div>
       </div>
       <div class="border rounded-lg overflow-hidden">
         <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1200" class="w-full h-48 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold">Lakefront Suite</h3>
-          <p>₱8,200++ / night</p>
-        </div>
+        <div class="p-4"><h3 class="font-semibold">Lakefront Suite</h3><p>₱8,200++ / night</p></div>
       </div>
     </div>
   </section>
 
+  <!-- Dining -->
+  <section id="dining" class="bg-gray-50 p-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Dining</h2>
+      <p>Enjoy local flavors, international favorites, and sunset cocktails at our all-day bistro & bar.</p>
+      <img src="https://images.unsplash.com/photo-1521017432531-fbd92d32bde7?q=80&w=1200" class="rounded-lg mt-4">
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section id="amenities" class="max-w-5xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">Amenities</h2>
+    <ul class="grid md:grid-cols-2 gap-2 list-disc pl-6">
+      <li>Infinity Pool</li>
+      <li>High-speed Wi-Fi</li>
+      <li>24/7 Fitness Center</li>
+      <li>Free Parking</li>
+      <li>Lake Access</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="bg-gray-50 p-6">
+    <h2 class="text-2xl font-bold mb-4 text-center">Gallery</h2>
+    <div class="grid md:grid-cols-4 gap-2">
+      <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200" class="rounded-lg">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200" class="rounded-lg">
+      <img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=1200" class="rounded-lg">
+      <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=1200" class="rounded-lg">
+    </div>
+  </section>
+
+  <!-- Offers -->
+  <section id="offers" class="max-w-5xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">Exclusive Offers</h2>
+    <ul class="space-y-2">
+      <li><strong>Weekday Escape:</strong> Stay 2 nights, get the 3rd night 40% off.</li>
+      <li><strong>Suite Indulgence:</strong> Complimentary breakfast & late checkout.</li>
+      <li><strong>Dine & Unwind:</strong> ₱1,000 dining credit per night.</li>
+    </ul>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="bg-gray-50 p-6">
+    <h2 class="text-2xl font-bold mb-4 text-center">Guest Reviews</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-4">
+      <div class="border p-4 rounded">★★★★★<br>"The lakeview suite was gorgeous and the staff were incredibly warm." – Maria</div>
+      <div class="border p-4 rounded">★★★★★<br>"Fast Wi‑Fi, comfy bed, and the bistro kare‑kare is a must." – Kenji</div>
+      <div class="border p-4 rounded">★★★★★<br>"Sunset at the infinity pool… unforgettable." – Ava</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-5xl mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-4">Contact & Location</h2>
+    <p><strong>Address:</strong> Lakeshore Dr., Canlubang, Calamba, Laguna</p>
+    <p><strong>Phone:</strong> +63 49 812 0000</p>
+    <p><strong>Email:</strong> hello@lagunalakefronthotel.ph</p>
+    <div class="mt-4">
+      <iframe class="w-full h-64 rounded" src="https://www.google.com/maps?q=Canlubang,+Calamba,+Laguna&output=embed"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="bg-gray-800 text-white text-center p-6 mt-12">
     <p>© 2025 Laguna Lakefront Hotel. All rights reserved.</p>
   </footer>
